@@ -1,0 +1,1 @@
+# Mohr's Circle: Determining the two-dimensional strength of structures
