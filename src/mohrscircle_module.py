@@ -21,7 +21,7 @@ class MohrsCircle():
 
     def sigma_avg(self):
         """sigma_avg returns the average normal stress (the center of mohr's circle)"""
-        return ""
+        return (self.sigma_x + self.sigma_y) / 2
 
     def tau_max_xy(self):
         """tau_max_xy returns the max shear stress (radius of mohr's circle)"""
