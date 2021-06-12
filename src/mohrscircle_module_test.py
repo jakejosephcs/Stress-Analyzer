@@ -33,3 +33,8 @@ def test_get_tau_xy_valueError():
     """tau_xy of MohrsCircle(50, -10, "40") should raise a Value error"""
     with pytest.raises(ValueError):
         MohrsCircle(50, -10, '40').get_tau_xy()
+
+
+def test_sigma_avg():
+    """tau_xy of MohrsCircle(50, -10, 40) should be 20"""
+    assert MohrsCircle(50, -10, 40).sigma_avg() == 20
