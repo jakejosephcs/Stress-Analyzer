@@ -1,3 +1,6 @@
+import math
+
+
 class MohrsCircle():
     def __init__(self, sigma_x, sigma_y, tau_xy):
         """constructor"""
@@ -25,7 +28,9 @@ class MohrsCircle():
 
     def tau_max_xy(self):
         """tau_max_xy returns the max shear stress (radius of mohr's circle)"""
-        return ""
+        a = (self.sigma_x - self.sigma_y) / 2
+        b = self.tau_xy
+        return math.sqrt(a**2 + b**2)
 
     def max_principal_stress(self):
         """max_principal_stress returns the max principal stress"""
