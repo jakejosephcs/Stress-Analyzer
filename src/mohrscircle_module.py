@@ -38,7 +38,7 @@ class MohrsCircle():
 
     def min_principal_stress(self):
         """min_principal_stress returns the min principal stress"""
-        return ""
+        return self.sigma_avg() - self.tau_max_xy()
 
     def principal_angle(self):
         """principal_angle returns the principle angle in degrees"""
