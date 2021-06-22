@@ -41,7 +41,7 @@ def test_sigma_avg():
 
 
 def test_tau_max_xy():
-    """tau_max_xy of MohrsCircle(50, -10, 40) should be 20"""
+    """tau_max_xy of MohrsCircle(50, -10, 40) should be 50"""
     assert MohrsCircle(50, -10, 40).tau_max_xy() == 50
 
 
