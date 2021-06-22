@@ -42,7 +42,7 @@ class MohrsCircle():
 
     def principal_angle(self):
         """principal_angle returns the principle angle in degrees"""
-        return ""
+        return math.degrees(math.atan((2*self.tau_xy)/(self.sigma_x - self.sigma_y))) / 2
 
     def shear_angle(self):
         """shear_angle returns the shear angle in degrees"""
