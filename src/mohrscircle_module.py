@@ -46,4 +46,4 @@ class MohrsCircle():
 
     def shear_angle(self):
         """shear_angle returns the shear angle in degrees"""
-        return ""
+        return (90 - self.principal_angle()*2)/2
