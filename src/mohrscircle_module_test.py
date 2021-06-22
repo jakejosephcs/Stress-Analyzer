@@ -51,7 +51,8 @@ def test_max_principal_stress():
 
 
 def test_min_principal_stress():
-    pass
+    """min_principal_stress of MohrsCircle(50, -10, 40) should be 70"""
+    assert MohrsCircle(50, -10, 40).min_principal_stress() == -30
 
 
 def test_principal_angle():
