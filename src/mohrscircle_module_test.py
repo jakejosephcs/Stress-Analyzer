@@ -43,3 +43,19 @@ def test_sigma_avg():
 def test_tau_max_xy():
     """tau_max_xy of MohrsCircle(50, -10, 40) should be 20"""
     assert MohrsCircle(50, -10, 40).tau_max_xy() == 50
+
+
+def test_max_principal_stress():
+    pass
+
+
+def test_min_principal_stress():
+    pass
+
+
+def test_principal_angle():
+    pass
+
+
+def test_shear_angle():
+    pass
