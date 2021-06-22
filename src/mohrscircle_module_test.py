@@ -56,7 +56,9 @@ def test_min_principal_stress():
 
 
 def test_principal_angle():
-    pass
+    """principal_angle returns the principle angle in degrees"""
+    assert MohrsCircle(
+        50, -10, 40).principal_angle() == pytest.approx(26, abs=1)
 
 
 def test_shear_angle():
