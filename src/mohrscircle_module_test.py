@@ -62,4 +62,6 @@ def test_principal_angle():
 
 
 def test_shear_angle():
-    pass
+    """shear_angle returns the shear angle in degrees"""
+    assert MohrsCircle(
+        50, -10, 40).shear_angle() == pytest.approx(19, abs=1)
